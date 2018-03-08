@@ -14,7 +14,7 @@ setup(
     version=version,
     description='provide local file store.',
     author='qiang wu',
-    author_email='wuqiangroy@live.com',
+    author_email='wuqiangroy@gmail.com',
     url='https://github.com/wuqiangroy/FileDB',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
