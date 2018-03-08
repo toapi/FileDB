@@ -95,8 +95,10 @@ class DBStore:
                     url VAR(100) PRIMARY KEY,
                     html TEXT,
                     create_time FLOAT);"""
+    basedir = os.path.abspath(os.path.dirname(__file__))
+    db_url = "sqlite:///"+os.path.join(basedir, 'data.sqlite')
 
-    def __init__(self, db_url):
+    def __init__(self, db_url=db_url):
 
         self.db = create_engine(db_url)
         if db_url.startswith("mysql"):
